@@ -15,7 +15,6 @@
 	<description>Prueba técnica Hack the future</description>
 	<properties>
 		<java.version>11</java.version>
-		<notion-sdk.version>1.8.0</notion-sdk.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -41,11 +40,12 @@
         </dependency>
 
 		<dependency>
-			<groupId>com.github.seratch</groupId>
-			<artifactId>notion-sdk-jvm-core</artifactId>
-			<version>${notion-sdk.version}</version>
+			<groupId>com.google.firebase</groupId>
+			<artifactId>firebase-admin</artifactId>
+			<version>9.1.1</version>
 		</dependency>
-    </dependencies>
+
+	</dependencies>
 
 	<build>
 		<plugins>

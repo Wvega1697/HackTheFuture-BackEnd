@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ConsumeObject {
-    private String id;
+    private String internalId;
     private String description;
     private Type type;
     private EmissionType emissionType;
