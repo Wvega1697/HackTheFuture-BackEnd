@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EcoIndustriaApplication {
+public class EcoIndustryApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EcoIndustriaApplication.class, args);
+		SpringApplication.run(EcoIndustryApplication.class, args);
 	}
 
 }
