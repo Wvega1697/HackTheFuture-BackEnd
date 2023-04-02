@@ -39,40 +39,40 @@ public class ConsumptionController {
     @GetMapping("/segment")
     public ResponseWS getSegment(){
         return consumptionService.maxSegment();
-    }/*
+    }
 
-    @GetMapping("/")
+    @GetMapping("/packagingPlant")
     public ResponseWS getPackagingPlant(){
-        return new ResponseWS();
+        return consumptionService.packagingPlant();
     }
 
-    @GetMapping("/")
+    @GetMapping("/monthlyConsumption")
     public ResponseWS getMonthlyConsumption(){
-        return new ResponseWS();
+        return consumptionService.monthlyConsumption();
     }
 
-    @GetMapping("/")
+    @GetMapping("/petroleumAverage")
     public ResponseWS getPetroleumAverage(){
-        return new ResponseWS();
+        return consumptionService.petroleumAverage();
     }
 
-    @GetMapping("/")
+    @GetMapping("/monthlyTravels")
     public ResponseWS getMonthlyTravels(){
-        return new ResponseWS();
+        return consumptionService.monthlyTravels();
     }
 
-    @GetMapping("/")
+    @GetMapping("/monthlyOil")
     public ResponseWS getMonthlyOil(){
-        return new ResponseWS();
+        return consumptionService.monthlyOil();
     }
 
-    @GetMapping("/")
+    @GetMapping("/coolantMonth")
     public ResponseWS getCoolantMonth(){
-        return new ResponseWS();
+        return consumptionService.coolantMonth();
     }
 
-    @GetMapping("/")
+    @GetMapping("/getGallons")
     public ResponseWS getGallons(){
-        return new ResponseWS();
-    }//*/
+        return consumptionService.getGallons();
+    }
 }
