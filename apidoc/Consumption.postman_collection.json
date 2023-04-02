@@ -1,0 +1,1356 @@
+{
+	"info": {
+		"_postman_id": "e82727ce-2233-46b7-a8c9-f2fb0589af8e",
+		"name": "Consumption",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "565970"
+	},
+	"item": [
+		{
+			"name": "ADD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"Uso promedio diario de papel bond para impresión de documentos\",\r\n    \"type\": \"PETROLEUM_DERIVED_PRODUCT\",\r\n    \"emissionType\": \"other\",\r\n    \"categoryType\": \"Logistic\",\r\n    \"unit\": \"Sheets\",\r\n    \"quantity\": 9300,\r\n    \"month\": \"JANUARY\",\r\n    \"subType\": \"Sheets\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1697/consume/add",
+					"host": [
+						"localhost"
+					],
+					"port": "1697",
+					"path": [
+						"consume",
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Gasolina Admin",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Uso mensual de combustible para los vehículos administrativos\",\r\n    \"type\": \"FUEL\",\r\n    \"emissionType\": \"DIRECT\",\r\n    \"categoryType\": \"ADMIN\",\r\n    \"unit\": \"GALLON\",\r\n    \"quantity\": 750,\r\n    \"month\": \"JANUARY\",\r\n    \"subType\": \"FUEL\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1697/consume/add",
+							"host": [
+								"localhost"
+							],
+							"port": "1697",
+							"path": [
+								"consume",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Apr 2023 18:07:43 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"id\": \"1_FUEL_ADMIN\",\n        \"description\": \"Uso mensual de combustible para los vehículos administrativos\",\n        \"type\": \"FUEL\",\n        \"emissionType\": \"DIRECT\",\n        \"categoryType\": \"ADMIN\",\n        \"unitOfMeasure\": \"GALLON\",\n        \"quantity\": 750,\n        \"month\": \"JANUARY\",\n        \"subType\": \"FUEL\"\n    }\n}"
+				},
+				{
+					"name": "Gasolina Indirecto",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Uso mensual de combustible para transporte tercero de materia prima\",\r\n    \"type\": \"FUEL\",\r\n    \"emissionType\": \"Other\",\r\n    \"categoryType\": \"Indirect\",\r\n    \"unit\": \"GALLON\",\r\n    \"quantity\": 500,\r\n    \"month\": \"JANUARY\",\r\n    \"subType\": \"FUEL\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1697/consume/add",
+							"host": [
+								"localhost"
+							],
+							"port": "1697",
+							"path": [
+								"consume",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Apr 2023 19:48:13 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"id\": \"1_FUEL_INDIRECT\",\n        \"description\": \"Uso mensual de combustible para transporte tercero de materia prima\",\n        \"type\": \"FUEL\",\n        \"emissionType\": \"OTHER\",\n        \"categoryType\": \"INDIRECT\",\n        \"unitOfMeasure\": \"GALLON\",\n        \"quantity\": 500,\n        \"month\": \"JANUARY\",\n        \"subType\": \"FUEL\"\n    }\n}"
+				},
+				{
+					"name": "Gasolina Logistica",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Uso mensual de combustible para transporte tercero de materia prima\",\r\n    \"type\": \"FUEL\",\r\n    \"emissionType\": \"DIRECT\",\r\n    \"categoryType\": \"Logistic\",\r\n    \"unit\": \"GALLON\",\r\n    \"quantity\": 1250,\r\n    \"month\": \"JANUARY\",\r\n    \"subType\": \"FUEL\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1697/consume/add",
+							"host": [
+								"localhost"
+							],
+							"port": "1697",
+							"path": [
+								"consume",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Apr 2023 19:48:13 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"id\": \"1_FUEL_INDIRECT\",\n        \"description\": \"Uso mensual de combustible para transporte tercero de materia prima\",\n        \"type\": \"FUEL\",\n        \"emissionType\": \"OTHER\",\n        \"categoryType\": \"INDIRECT\",\n        \"unitOfMeasure\": \"GALLON\",\n        \"quantity\": 500,\n        \"month\": \"JANUARY\",\n        \"subType\": \"FUEL\"\n    }\n}"
+				},
+				{
+					"name": "Electricidad Admin",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Consumo de energía eléctrica en oficinas administrativas\",\r\n    \"type\": \"Electricity\",\r\n    \"emissionType\": \"Indirect\",\r\n    \"categoryType\": \"Admin\",\r\n    \"unit\": \"Kw\",\r\n    \"quantity\": 300,\r\n    \"month\": \"JANUARY\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1697/consume/add",
+							"host": [
+								"localhost"
+							],
+							"port": "1697",
+							"path": [
+								"consume",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Apr 2023 20:57:49 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"internalId\": \"1_ELECTRICITY_ADMIN\",\n        \"description\": \"Consumo de energía eléctrica en oficinas administrativas\",\n        \"type\": \"ELECTRICITY\",\n        \"emissionType\": \"INDIRECT\",\n        \"categoryType\": \"ADMIN\",\n        \"unitOfMeasure\": \"KW\",\n        \"quantity\": 300,\n        \"month\": \"JANUARY\",\n        \"subType\": null\n    }\n}"
+				},
+				{
+					"name": "Electricidad Logistica",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Consumo de energía eléctrica en planta de envasado\",\r\n    \"type\": \"Electricity\",\r\n    \"emissionType\": \"Indirect\",\r\n    \"categoryType\": \"Logistic\",\r\n    \"unit\": \"Kw\",\r\n    \"quantity\": 900,\r\n    \"month\": \"JANUARY\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1697/consume/add",
+							"host": [
+								"localhost"
+							],
+							"port": "1697",
+							"path": [
+								"consume",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Apr 2023 20:59:03 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"internalId\": \"1_ELECTRICITY_LOGISTIC\",\n        \"description\": \"Consumo de energía eléctrica en planta de envasado\",\n        \"type\": \"ELECTRICITY\",\n        \"emissionType\": \"INDIRECT\",\n        \"categoryType\": \"LOGISTIC\",\n        \"unitOfMeasure\": \"KW\",\n        \"quantity\": 900,\n        \"month\": \"JANUARY\",\n        \"subType\": null\n    }\n}"
+				},
+				{
+					"name": "Aceite Maquinas",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Uso mensual de aceite para mantenimiento de máquinas operadoras\",\r\n    \"type\": \"PETROLEUM_DERIVED_PRODUCT\",\r\n    \"emissionType\": \"direct\",\r\n    \"categoryType\": \"Operation\",\r\n    \"unit\": \"Gallon\",\r\n    \"quantity\": 900,\r\n    \"month\": \"JANUARY\",\r\n    \"subType\": \"OIL\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1697/consume/add",
+							"host": [
+								"localhost"
+							],
+							"port": "1697",
+							"path": [
+								"consume",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Apr 2023 21:01:09 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"internalId\": \"1_PETROLEUM_DERIVED_PRODUCT_OPERATION\",\n        \"description\": \"Uso mensual de aceite para mantenimiento de máquinas operadoras\",\n        \"type\": \"PETROLEUM_DERIVED_PRODUCT\",\n        \"emissionType\": \"DIRECT\",\n        \"categoryType\": \"OPERATION\",\n        \"unitOfMeasure\": \"GALLON\",\n        \"quantity\": 900,\n        \"month\": \"JANUARY\",\n        \"subType\": null\n    }\n}"
+				},
+				{
+					"name": "Aceite Flotas",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Consumo diario de aceite para mantenimiento de flota de distribución\",\r\n    \"type\": \"PETROLEUM_DERIVED_PRODUCT\",\r\n    \"emissionType\": \"direct\",\r\n    \"categoryType\": \"Distribution\",\r\n    \"unit\": \"Gallon\",\r\n    \"quantity\": 31,\r\n    \"month\": \"JANUARY\",\r\n    \"subType\": \"OIL\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1697/consume/add",
+							"host": [
+								"localhost"
+							],
+							"port": "1697",
+							"path": [
+								"consume",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Apr 2023 21:02:15 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"internalId\": \"1_PETROLEUM_DERIVED_PRODUCT_DISTRIBUTION\",\n        \"description\": \"Consumo diario de aceite para mantenimiento de flota de distribución\",\n        \"type\": \"PETROLEUM_DERIVED_PRODUCT\",\n        \"emissionType\": \"DIRECT\",\n        \"categoryType\": \"DISTRIBUTION\",\n        \"unitOfMeasure\": \"GALLON\",\n        \"quantity\": 31,\n        \"month\": \"JANUARY\",\n        \"subType\": null\n    }\n}"
+				},
+				{
+					"name": "Viajes Admin",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Viajes del CEO y COO de la empresa\",\r\n    \"type\": \"TRAVEL\",\r\n    \"emissionType\": \"direct\",\r\n    \"categoryType\": \"admin\",\r\n    \"unit\": \"Travel\",\r\n    \"quantity\": 3,\r\n    \"month\": \"JANUARY\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1697/consume/add",
+							"host": [
+								"localhost"
+							],
+							"port": "1697",
+							"path": [
+								"consume",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Apr 2023 21:05:31 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"internalId\": \"1_TRAVEL_ADMIN\",\n        \"description\": \"Viajes del CEO y COO de la empresa\",\n        \"type\": \"TRAVEL\",\n        \"emissionType\": \"DIRECT\",\n        \"categoryType\": \"ADMIN\",\n        \"unitOfMeasure\": \"TRAVEL\",\n        \"quantity\": 3,\n        \"month\": \"JANUARY\",\n        \"subType\": null\n    }\n}"
+				},
+				{
+					"name": "Viajes Ventas",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Viajes del equipo de ventas de la empresa\",\r\n    \"type\": \"TRAVEL\",\r\n    \"emissionType\": \"direct\",\r\n    \"categoryType\": \"Sales\",\r\n    \"unit\": \"Travel\",\r\n    \"quantity\": 2,\r\n    \"month\": \"JANUARY\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1697/consume/add",
+							"host": [
+								"localhost"
+							],
+							"port": "1697",
+							"path": [
+								"consume",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Apr 2023 21:06:17 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"internalId\": \"1_TRAVEL_SALES\",\n        \"description\": \"Viajes del equipo de ventas de la empresa\",\n        \"type\": \"TRAVEL\",\n        \"emissionType\": \"DIRECT\",\n        \"categoryType\": \"SALES\",\n        \"unitOfMeasure\": \"TRAVEL\",\n        \"quantity\": 2,\n        \"month\": \"JANUARY\",\n        \"subType\": null\n    }\n}"
+				},
+				{
+					"name": "Gases refrigerantes",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Pérdidas de gases refrigerantes mensuales\",\r\n    \"type\": \"PETROLEUM_DERIVED_PRODUCT\",\r\n    \"emissionType\": \"other\",\r\n    \"categoryType\": \"Logistic\",\r\n    \"unit\": \"Gallon\",\r\n    \"quantity\": 3,\r\n    \"month\": \"JANUARY\",\r\n    \"subType\": \"Coolant\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1697/consume/add",
+							"host": [
+								"localhost"
+							],
+							"port": "1697",
+							"path": [
+								"consume",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Apr 2023 21:08:14 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"internalId\": \"1_PETROLEUM_DERIVED_PRODUCT_LOGISTIC\",\n        \"description\": \"Pérdidas de gases refrigerantes mensuales\",\n        \"type\": \"PETROLEUM_DERIVED_PRODUCT\",\n        \"emissionType\": \"OTHER\",\n        \"categoryType\": \"LOGISTIC\",\n        \"unitOfMeasure\": \"GALLON\",\n        \"quantity\": 3,\n        \"month\": \"JANUARY\",\n        \"subType\": \"COOLANT\"\n    }\n}"
+				},
+				{
+					"name": "Papel bond",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Uso promedio diario de papel bond para impresión de documentos\",\r\n    \"type\": \"PETROLEUM_DERIVED_PRODUCT\",\r\n    \"emissionType\": \"other\",\r\n    \"categoryType\": \"Logistic\",\r\n    \"unit\": \"Sheets\",\r\n    \"quantity\": 9300,\r\n    \"month\": \"JANUARY\",\r\n    \"subType\": \"Sheets\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1697/consume/add",
+							"host": [
+								"localhost"
+							],
+							"port": "1697",
+							"path": [
+								"consume",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Apr 2023 21:09:22 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"internalId\": \"1_PETROLEUM_DERIVED_PRODUCT_LOGISTIC\",\n        \"description\": \"Uso promedio diario de papel bond para impresión de documentos\",\n        \"type\": \"PETROLEUM_DERIVED_PRODUCT\",\n        \"emissionType\": \"OTHER\",\n        \"categoryType\": \"LOGISTIC\",\n        \"unitOfMeasure\": \"SHEETS\",\n        \"quantity\": 9300,\n        \"month\": \"JANUARY\",\n        \"subType\": \"SHEETS\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:1697/consume/edit/FUEL/ADMIN/JANUARY/800",
+					"host": [
+						"localhost"
+					],
+					"port": "1697",
+					"path": [
+						"consume",
+						"edit",
+						"FUEL",
+						"ADMIN",
+						"JANUARY",
+						"800"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Actualizar cantidad de consumo",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:1697/consume/edit/FUEL/ADMIN/JANUARY/1250",
+							"host": [
+								"localhost"
+							],
+							"port": "1697",
+							"path": [
+								"consume",
+								"edit",
+								"FUEL",
+								"ADMIN",
+								"JANUARY",
+								"1250"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Apr 2023 20:22:48 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"internalId\": \"1_FUEL_ADMIN\",\n        \"description\": \"Uso mensual de combustible para los vehículos administrativos\",\n        \"type\": \"FUEL\",\n        \"emissionType\": \"DIRECT\",\n        \"categoryType\": \"ADMIN\",\n        \"unitOfMeasure\": \"GALLON\",\n        \"quantity\": 1250,\n        \"month\": \"JANUARY\",\n        \"subType\": \"FUEL\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "annualFuel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1697/consume/annualFuel",
+					"host": [
+						"localhost"
+					],
+					"port": "1697",
+					"path": [
+						"consume",
+						"annualFuel"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "annualFuel",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:1697/consume/annualFuel",
+							"host": [
+								"localhost"
+							],
+							"port": "1697",
+							"path": [
+								"consume",
+								"annualFuel"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Apr 2023 21:39:16 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"message\": \"Averages\",\n    \"data\": {\n        \"admin\": 0.4166666666666667,\n        \"logistic\": 0.4166666666666667,\n        \"indirect\": 0.16666666666666666\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "monthlyFuel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1697/consume/monthlyFuel",
+					"host": [
+						"localhost"
+					],
+					"port": "1697",
+					"path": [
+						"consume",
+						"monthlyFuel"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "monthlyFuel",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:1697/consume/monthlyFuel",
+							"host": [
+								"localhost"
+							],
+							"port": "1697",
+							"path": [
+								"consume",
+								"monthlyFuel"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Apr 2023 22:00:26 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"message\": \"Averages\",\n    \"data\": {\n        \"January\": 3000,\n        \"February\": 0,\n        \"March\": 0,\n        \"April\": 0,\n        \"May\": 0,\n        \"June\": 0,\n        \"July\": 0,\n        \"August\": 0,\n        \"September\": 0,\n        \"October\": 0,\n        \"November\": 0,\n        \"December\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Segment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1697/consume/segment",
+					"host": [
+						"localhost"
+					],
+					"port": "1697",
+					"path": [
+						"consume",
+						"segment"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Segment",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:1697/consume/segment",
+							"host": [
+								"localhost"
+							],
+							"port": "1697",
+							"path": [
+								"consume",
+								"segment"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Apr 2023 22:10:28 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"message\": \"More impact segment\",\n    \"data\": {\n        \"Other\": 0.678925133319482\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "packagingPlant",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1697/consume/packagingPlant",
+					"host": [
+						"localhost"
+					],
+					"port": "1697",
+					"path": [
+						"consume",
+						"packagingPlant"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Packaging Plant",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:1697/consume/packagingPlant",
+							"host": [
+								"localhost"
+							],
+							"port": "1697",
+							"path": [
+								"consume",
+								"packagingPlant"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Apr 2023 00:02:28 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"message\": \"Packaging Plant percentage\",\n    \"data\": {\n        \"January\": 900,\n        \"February\": 0,\n        \"March\": 0,\n        \"April\": 0,\n        \"May\": 0,\n        \"June\": 0,\n        \"July\": 0,\n        \"August\": 0,\n        \"September\": 0,\n        \"October\": 0,\n        \"November\": 0,\n        \"December\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "monthlyConsumption",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1697/consume/monthlyConsumption",
+					"host": [
+						"localhost"
+					],
+					"port": "1697",
+					"path": [
+						"consume",
+						"monthlyConsumption"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "monthlyConsumption",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:1697/consume/monthlyConsumption",
+							"host": [
+								"localhost"
+							],
+							"port": "1697",
+							"path": [
+								"consume",
+								"monthlyConsumption"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Apr 2023 00:26:27 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"message\": \"Monthly Fuel and Electricity\",\n    \"data\": {\n        \"January\": {\n            \"Fuel\": 3000,\n            \"Electricity\": 1200\n        },\n        \"February\": {\n            \"Fuel\": 0,\n            \"Electricity\": 0\n        },\n        \"March\": {\n            \"Fuel\": 0,\n            \"Electricity\": 0\n        },\n        \"April\": {\n            \"Fuel\": 0,\n            \"Electricity\": 0\n        },\n        \"May\": {\n            \"Fuel\": 0,\n            \"Electricity\": 0\n        },\n        \"June\": {\n            \"Fuel\": 0,\n            \"Electricity\": 0\n        },\n        \"July\": {\n            \"Fuel\": 0,\n            \"Electricity\": 0\n        },\n        \"August\": {\n            \"Fuel\": 0,\n            \"Electricity\": 0\n        },\n        \"September\": {\n            \"Fuel\": 0,\n            \"Electricity\": 0\n        },\n        \"October\": {\n            \"Fuel\": 0,\n            \"Electricity\": 0\n        },\n        \"November\": {\n            \"Fuel\": 0,\n            \"Electricity\": 0\n        },\n        \"December\": {\n            \"Fuel\": 0,\n            \"Electricity\": 0\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "monthlyTravels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1697/consume/monthlyTravels",
+					"host": [
+						"localhost"
+					],
+					"port": "1697",
+					"path": [
+						"consume",
+						"monthlyTravels"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "monthlyTravels",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:1697/consume/monthlyTravels",
+							"host": [
+								"localhost"
+							],
+							"port": "1697",
+							"path": [
+								"consume",
+								"monthlyTravels"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Apr 2023 00:46:37 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"message\": \"Travel monthly\",\n    \"data\": {\n        \"January\": {\n            \"Administration\": 3,\n            \"Sales\": 2\n        },\n        \"February\": {\n            \"Administration\": 0,\n            \"Sales\": 0\n        },\n        \"March\": {\n            \"Administration\": 0,\n            \"Sales\": 0\n        },\n        \"April\": {\n            \"Administration\": 0,\n            \"Sales\": 0\n        },\n        \"May\": {\n            \"Administration\": 0,\n            \"Sales\": 0\n        },\n        \"June\": {\n            \"Administration\": 0,\n            \"Sales\": 0\n        },\n        \"July\": {\n            \"Administration\": 0,\n            \"Sales\": 0\n        },\n        \"August\": {\n            \"Administration\": 0,\n            \"Sales\": 0\n        },\n        \"September\": {\n            \"Administration\": 0,\n            \"Sales\": 0\n        },\n        \"October\": {\n            \"Administration\": 0,\n            \"Sales\": 0\n        },\n        \"November\": {\n            \"Administration\": 0,\n            \"Sales\": 0\n        },\n        \"December\": {\n            \"Administration\": 0,\n            \"Sales\": 0\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "monthlyOil",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1697/consume/monthlyOil",
+					"host": [
+						"localhost"
+					],
+					"port": "1697",
+					"path": [
+						"consume",
+						"monthlyOil"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "monthlyOil",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:1697/consume/monthlyOil",
+							"host": [
+								"localhost"
+							],
+							"port": "1697",
+							"path": [
+								"consume",
+								"monthlyOil"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Apr 2023 00:59:32 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"message\": \"Oil gallons\",\n    \"data\": {\n        \"January\": 931,\n        \"February\": 0,\n        \"March\": 0,\n        \"April\": 0,\n        \"May\": 0,\n        \"June\": 0,\n        \"July\": 0,\n        \"August\": 0,\n        \"September\": 0,\n        \"October\": 0,\n        \"November\": 0,\n        \"December\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "coolantMonth",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1697/consume/coolantMonth",
+					"host": [
+						"localhost"
+					],
+					"port": "1697",
+					"path": [
+						"consume",
+						"coolantMonth"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "coolantMonth",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:1697/consume/coolantMonth",
+							"host": [
+								"localhost"
+							],
+							"port": "1697",
+							"path": [
+								"consume",
+								"coolantMonth"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Apr 2023 01:18:21 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"message\": \"Best Coolant Month\",\n    \"data\": {\n        \"Month\": \"February\",\n        \"Gallons\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "getGallons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1697/consume/getGallons",
+					"host": [
+						"localhost"
+					],
+					"port": "1697",
+					"path": [
+						"consume",
+						"getGallons"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getGallons",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:1697/consume/getGallons",
+							"host": [
+								"localhost"
+							],
+							"port": "1697",
+							"path": [
+								"consume",
+								"getGallons"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Apr 2023 01:31:48 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"message\": \"Max and Min fuel consumption month\",\n    \"data\": {\n        \"Min\": {\n            \"Month\": \"June\",\n            \"Gallons\": 0\n        },\n        \"Max\": {\n            \"Month\": \"January\",\n            \"Gallons\": 3000\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "petroleumAverage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1697/consume/petroleumAverage",
+					"host": [
+						"localhost"
+					],
+					"port": "1697",
+					"path": [
+						"consume",
+						"petroleumAverage"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "petroleumAverage",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:1697/consume/petroleumAverage",
+							"host": [
+								"localhost"
+							],
+							"port": "1697",
+							"path": [
+								"consume",
+								"petroleumAverage"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Apr 2023 01:45:18 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"success\": true,\n    \"message\": \"Travel monthly\",\n    \"data\": {\n        \"January\": {\n            \"Fuel\": 0.7631645891630628,\n            \"Oil\": 0.23683541083693715\n        },\n        \"February\": {\n            \"Fuel\": \"NaN\",\n            \"Oil\": \"NaN\"\n        },\n        \"March\": {\n            \"Fuel\": \"NaN\",\n            \"Oil\": \"NaN\"\n        },\n        \"April\": {\n            \"Fuel\": \"NaN\",\n            \"Oil\": \"NaN\"\n        },\n        \"May\": {\n            \"Fuel\": \"NaN\",\n            \"Oil\": \"NaN\"\n        },\n        \"June\": {\n            \"Fuel\": \"NaN\",\n            \"Oil\": \"NaN\"\n        },\n        \"July\": {\n            \"Fuel\": \"NaN\",\n            \"Oil\": \"NaN\"\n        },\n        \"August\": {\n            \"Fuel\": \"NaN\",\n            \"Oil\": \"NaN\"\n        },\n        \"September\": {\n            \"Fuel\": \"NaN\",\n            \"Oil\": \"NaN\"\n        },\n        \"October\": {\n            \"Fuel\": \"NaN\",\n            \"Oil\": \"NaN\"\n        },\n        \"November\": {\n            \"Fuel\": \"NaN\",\n            \"Oil\": \"NaN\"\n        },\n        \"December\": {\n            \"Fuel\": \"NaN\",\n            \"Oil\": \"NaN\"\n        }\n    }\n}"
+				}
+			]
+		}
+	]
+}
