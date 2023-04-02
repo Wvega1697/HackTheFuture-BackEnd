@@ -1,7 +1,7 @@
-package com.wvega.models;
+package com.wvega.models.enums;
 
 public enum SubType {
-    PACKAGING_PLANT("Packaging plant"),
+    FUEL("Fuel"),
     OIL("Oil"),
     COOLANT("Coolant"),
     SHEETS("Sheets");

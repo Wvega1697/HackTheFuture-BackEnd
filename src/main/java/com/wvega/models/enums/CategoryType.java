@@ -1,4 +1,4 @@
-package com.wvega.models;
+package com.wvega.models.enums;
 
 public enum CategoryType {
     ADMIN("Admin"),

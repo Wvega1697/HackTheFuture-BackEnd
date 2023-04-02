@@ -1,5 +1,6 @@
 package com.wvega.models;
 
+import com.wvega.models.enums.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,8 +8,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ConsumptionObject {
-    private String id;
+public class ConsumeObject {
+    private String internalId;
     private String description;
     private Type type;
     private EmissionType emissionType;
