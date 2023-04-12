@@ -132,3 +132,9 @@ Los objetos de tipo "Consumo" (*ConsumeObject* dentro del API) se utilizan para 
 | subType | Define el subtipo del consumo. | SubType |
 
 *Adicional al internalId, firebase crea un ID unico al agregar el documento a la colección.
+
+## Colección de Postman
+
+A continuación encontrarás la colección de postman para exportarla, tiene ejemplos de cada método de la API.
+
+[Consumption.postman_collection.zip](https://github.com/Wvega1697/HackTheFuture-BackEnd/files/11214225/Consumption.postman_collection.zip)
