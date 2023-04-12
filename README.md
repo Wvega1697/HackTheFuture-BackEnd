@@ -1,4 +1,5 @@
 [![Landscape-of-Eco-Industrys.jpg](https://i.postimg.cc/MHmfcLzf/Leonardo-Creative-Landscape-of-Eco-Industrys-Sustainable-Diffus-0.jpg)](https://postimg.cc/PvN592pd)
+> Imagen generada por IA
 
 # EcoIndustry - HackTheFuture-BackEnd
 
