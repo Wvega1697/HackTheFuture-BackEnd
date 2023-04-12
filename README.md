@@ -1,9 +1,9 @@
+# Williams Adolfo Vega Montenegro - williamsv1697@gmail.com
+
 [![Landscape-of-Eco-Industrys.jpg](https://i.postimg.cc/MHmfcLzf/Leonardo-Creative-Landscape-of-Eco-Industrys-Sustainable-Diffus-0.jpg)](https://postimg.cc/PvN592pd)
 > Imagen generada por IA
 
 # EcoIndustry - HackTheFuture-BackEnd
-
-Williams Adolfo Vega Montenegro - williamsv1697@gmail.com
 
 EcoIndustry es una empresa comprometida con la reducción de la huella de carbono en su proceso de producción. Con el objetivo de lograr este objetivo, la empresa ha implementado técnicas innovadoras en sus instalaciones industriales. Como parte de su estrategia, EcoIndustry necesita recopilar información detallada de todas las áreas de la fábrica desde enero 2022 hasta diciembre 2022. Este proceso de recopilación de datos es esencial para la identificación de áreas críticas en las que se pueda reducir el consumo de energía y disminuir la emisión de gases contaminantes. En EcoIndustry, estamos comprometidos con el cuidado del medio ambiente y trabajamos constantemente para lograr un proceso de producción más sostenible y respetuoso con nuestro planeta.
 
